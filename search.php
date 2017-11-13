@@ -15,10 +15,18 @@
 			</ul>
 		</div>
 		<div class="conteudo">
-			<?php
-				include('methods/conect.php');
-				include_once('methods/selectall.php');
-			?>
+		<div class="search">
+			<form action="procura.php" method="POST">
+				<h4>Pesquisar por:</h4>
+				<select name="tipo">
+					<option value="null"></option>
+					<option value="artista">Artista</option>
+					<option value="album">Album</option>
+					<option value="musica">Musica</option>
+				</select>
+				<input type="submit">
+			</form>
+		</div>	
 		</div>
 		<div class="footer">
 			<h4>CopyRight</h4>

@@ -7,15 +7,22 @@
 	$result_query = mysqli_query($con, $query) or die(' Erro na query:' . $query . ' ' . mysqli_error() ); 
 					 
 	# Exibe os registros na tela 
+	$i=0;
+	print "<center>";
 	while ($row = mysqli_fetch_array($result_query)) { 
-		print 	"<hgroup>".
-					"<h1>$row[autor]</h1>".
-					"<h2>$row[album]</h2>".
-					"<h3>$row[musica]</h3>".
-				"</hgroup>";
-	}					 
+		$i++;
+		if($i==4) {
+			$i=0;
+			print "<br />";
+		}
+		print 	"<div class='bloco'>".
+					"<hgroup>".
+						"<h1>$row[autor]</h1>".
+						"<h2>$row[album]</h2>".
+						"<h3>$row[musica]</h3>".
+					"</hgroup>".
+				"</div>";
 
-
-
-
+	}				
+	print "</center>";
 ?>

@@ -4,6 +4,11 @@
 	font-family: DIN pro, sans-serif;
 }
 
+.linha{
+	padding-bottom: 10%;
+	border-bottom: 2px dotted #98FB98;
+}
+
 .menu ul{
 	margin: auto;
 	text-align: center;
@@ -21,4 +26,47 @@
 	padding-bottom: 1%;
 	padding-right: 1%;
 	padding-left: 1%;
+}
+
+.bloco{
+	margin-top: 2%;
+	padding-top: 4%;
+	margin-right: 1%;
+	padding-bottom: 4%;
+	text-align: center;
+	border: 1px solid #98FB98;
+	border-radius: 30px;
+	background-color: #228B22;
+	display: inline-block;
+	width: 30%;
+	height: 30%;
+}
+
+.container{
+	background-color: #98FB98;
+	min-height: 100vh; 
+}
+
+.conteudo{
+	min-height: 100vh;
+}
+
+.footer{
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: #2F4F4F;
+	text-align: center;
+}
+
+.search{
+	margin: 0 auto;
+	margin-top: 3%;
+	text-align: center;
+	background-color: #228B22;
+	width: 50%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	border: 1px solid #98FB98;
+	border-radius: 30px;
+	min-height: 50vh;
 }
